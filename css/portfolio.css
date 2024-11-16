@@ -182,15 +182,21 @@
 .robert-img {
     max-width: 600px;
 }
-.span-img{
+
+.span-img {
     display: none;
+}
+.robert-img-2 {
+   display: none;     
 }
 @media(max-width:640px) {
     .hero {
         padding-top: 40px;
         padding-bottom: 64px;
     }
-
+    .hero-container {
+        display: block;
+    }
     .hero-info-title {
         font-size: 57px;
         line-height: 57px;
@@ -201,9 +207,13 @@
         font-weight: 400;
         line-height: 25.6px;
         text-align: left;
+        max-width: 343px;
     }
 
-    .hero-info-links {}
+    .hero-info-links {
+        padding-bottom: 64px;
+
+    }
 
     .hero-info-links-1 {
         font-size: 14px;
@@ -213,31 +223,374 @@
     .hero-info-span {
         display: flex;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        /* width: 40px; */
+        /* height: 40px; */
     }
-    .span-img{
+
+    .span-img {
         display: block;
         text-align: center;
         align-items: center;
-        width: 15.34px;
-        height: 12.85px;
+
+        /* width: 15.34px; */
+        /* height: 12.85px; */
     }
-    .hero-info-links-2 {}
 
-    .hero-info-links-3 {}
+    .hero-img {
+        width: 343px;
+        background-color: rgba(199, 199, 199, 1);
+        border-radius: 16px;
+    }
 
-    .hero-img {}
-
-    .robert-img {}
+    .robert-img {
+        display: none;
+    }
+    .robert-img-2 {
+        display: block;
+    }
 }
 
 /* --------hero- finish--------- */
 
+.feature {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #0A0A0A;
+}
+
+.feature-container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.feature-title {
+    font-family: Bebas Neue;
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 76px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.feature-text {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(199, 199, 199, 1);
+    max-width: 600px;
+    margin-bottom: 80px;
+}
+
+.favorite-show {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.favorite-row {
+    background-color: rgba(26, 26, 26, 1);
+    padding: 16px;
+    border-radius: 12px;
+    position: relative;
+
+}
+
+.favorite-row-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 16px;
+    background: rgba(10, 10, 10, 1);
+    border-radius: 100px;
+    position: absolute;
+}
+
+.favorite-row-img {
+    padding: 126px 57px;
+    max-width: 486px;
+}
+
+.favorite-col {
+    color: rgba(255, 255, 255, 1);
+}
+
+.favourite-col-title {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 16px;
+    max-width: 576px;
+
+}
+
+.favourite-col-text {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 32px;
+    color: rgba(199, 199, 199, 1);
+    max-width: 576px;
+}
+
+.favourite-col-text-Info {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 16px;
+    padding-top: 16px;
+}
+
+.favourite-col-text-Info-2 {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    color: rgba(199, 199, 199, 1);
+}
+
+.favourite-col-info-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(72, 72, 72, 1);
+    border-bottom: 1px solid rgba(72, 72, 72, 1);
+
+}
+
+.favorite-col-div {
+    display: flex;
+    gap: 24px;
+    padding-top: 48px;
+}
+
+.favorite-col-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(211, 233, 122, 1);
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border-bottom: 2px solid rgba(211, 233, 122, 1);
+}
+
+
+/* -------cetion - finish--------- */
+
+.about {
+    padding-top: 122px;
+    padding-bottom: 391px;
+    background-color: #0A0A0A;
+}
+
+.about-container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.about-title {
+    font-family: Bebas Neue;
+    font-size: 101px;
+    font-weight: 400;
+    line-height: 90.9px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.about-info {
+    max-width: 704px;
+}
+
+.about-info-title {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 16px;
+
+}
+
+.about-info-text {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 53px;
+    color: rgba(199, 199, 199, 1);
+}
+
+/* -------cetion - finish--------- */
+
+.connect {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color: #0A0A0A;
+}
+
+.connect-container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.connect-row {
+    max-width: 600px;
+}
+
+.connect-row-title {
+    font-family: Bebas Neue;
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 76px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16px;
+}
+
+.connect-row-text {
+    color: rgba(199, 199, 199, 1);
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 40px;
+}
+
+.connect-row-text-link {
+    max-width: 302px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.connect-row-div {
+    display: flex;
+    gap: 32px;
+
+}
 
 
 
+.connect-row-link {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(199, 199, 199, 1);
 
+}
+
+/* 
+.connect-col {
+    max-width: 600px;
+} */
+
+.connect-col-form {
+    max-width: 600px;
+
+}
+
+.connect-col-form-text {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(199, 199, 199, 1);
+    margin-bottom: 8px;
+
+}
+
+.connect-col-form-input {
+    background-color: #262626;
+    border: none;
+    color: #ffffff;
+    max-width: 600px;
+    border-radius: 4px;
+    margin-bottom: 21px;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
 
 
 
